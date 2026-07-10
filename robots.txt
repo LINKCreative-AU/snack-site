@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://snack.com.au/sitemap.xml
