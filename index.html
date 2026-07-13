@@ -6,7 +6,7 @@
 <title>snack. — Your website. Built this week. $100 to start.</title>
 <meta name="description" content="A bite-size website, designed and written for you, live in about a week. $100 to start, then $75/month — hosted, secured and updated. No lock-in. snack.com.au">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700;800&family=Marcellus&family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
 <style>
 :root{--choc:#3A2418;--cream:#FFF3E2;--tang:#FF6B2B;--rasp:#F4457E;--butter:#FFC845;--mint:#63C99A;--paper:#FFFFFF;--warm:#6B5240}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -56,13 +56,20 @@ header .wrap{display:flex;justify-content:space-between;align-items:center}
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:32px}
 .work-card{display:block;text-decoration:none;color:var(--choc);background:var(--paper);border:3px solid var(--choc);border-radius:20px;overflow:hidden;box-shadow:6px 6px 0 rgba(58,36,24,.12);transition:transform .12s ease,box-shadow .12s ease}
 .work-card:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 rgba(58,36,24,.12)}
-.work-shot{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;border-bottom:3px solid var(--choc)}
+.work-shot{aspect-ratio:16/10;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;border-bottom:3px solid var(--choc);padding:18px}
 .work-shot .work-name{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:27px;letter-spacing:.06em}
+.work-shot img{max-width:72%;max-height:58%;object-fit:contain}
 .work-shot.mono{background:#1E2422}
-.work-shot.mono .work-name{color:#EFEBE1}
-.work-shot.mono .work-name .m-dot{color:#A8894E}
-.work-shot.lnk{background:linear-gradient(135deg,var(--tang),var(--rasp))}
-.work-shot.lnk .work-name{color:#fff}
+.work-shot.mono svg{height:64px;width:auto}
+.work-shot.mono .mono-name{font-family:'Marcellus',serif;font-weight:400;font-size:20px;letter-spacing:.14em;color:#EFEBE1}
+.work-shot.lnk{background:#fff}
+.work-shot.mri{background:#F4EFE4}
+.work-shot.mtc{background:#fff}
+.work-shot.dsp{background:#1e2250}
+.work-shot.dsp .dsp-name{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:32px;letter-spacing:.04em;line-height:1;color:#fff;text-align:center}
+.work-shot.dsp .dsp-a{color:#74c0fc}
+.work-shot.dsp .dsp-dot{color:#fae541}
+.work-shot.dsp small{display:block;font-size:9.5px;font-weight:500;letter-spacing:.14em;color:#aeb6d8;text-transform:uppercase;margin-top:5px}
 .work-shot.soon{background:var(--butter)}
 .work-shot.soon .work-name{color:var(--choc);font-size:22px}
 .work-meta{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
@@ -201,12 +208,36 @@ footer a{color:#9A8570}
     <p class="work-sub">A few we've cooked up lately. More on the menu soon.</p>
     <div class="work-grid">
       <a class="work-card" href="https://monument.org" target="_blank" rel="noopener">
-        <div class="work-shot mono"><span class="work-name">MONUMENT<span class="m-dot">.</span></span></div>
+        <div class="work-shot mono">
+          <svg viewBox="30 24 96 116" role="img" aria-label="Monument mark">
+            <g fill="#EFEBE1" transform="translate(31,36)">
+              <path d="M6.5,54 L21.5,54 L23,100 L5,100 Z"/>
+              <path d="M37,28 L53,28 L54.5,100 L35.5,100 Z"/>
+              <path d="M69.5,0 L86.5,0 L88,100 L68,100 Z"/>
+            </g>
+            <g transform="translate(31,36)">
+              <rect x="66.5" y="-8" width="23" height="6" fill="#A8894E"/>
+            </g>
+          </svg>
+          <span class="mono-name">MONUMENT</span>
+        </div>
         <div class="work-meta"><b>Monument</b><span>monument.org</span></div>
       </a>
       <a class="work-card" href="https://link.com.au" target="_blank" rel="noopener">
-        <div class="work-shot lnk"><span class="work-name">LINK</span></div>
+        <div class="work-shot lnk"><img src="/assets/link-logo.png" alt="LINK logo"></div>
         <div class="work-meta"><b>LINK</b><span>link.com.au</span></div>
+      </a>
+      <a class="work-card" href="https://mrinstall.com.au" target="_blank" rel="noopener">
+        <div class="work-shot mri"><img src="/assets/mrinstall-logo.png" alt="Mr Install logo"></div>
+        <div class="work-meta"><b>Mr Install</b><span>mrinstall.com.au</span></div>
+      </a>
+      <a class="work-card" href="https://daspa.com.au" target="_blank" rel="noopener">
+        <div class="work-shot dsp"><span class="dsp-name">DASP<span class="dsp-a">A</span><span class="dsp-dot">.</span><small>Get your super back</small></span></div>
+        <div class="work-meta"><b>DASPA</b><span>daspa.com.au</span></div>
+      </a>
+      <a class="work-card" href="https://mytherapycrew.com.au" target="_blank" rel="noopener">
+        <div class="work-shot mtc"><img src="/assets/mytherapycrew-logo.png" alt="My Therapy Crew logo"></div>
+        <div class="work-meta"><b>My Therapy Crew</b><span>mytherapycrew.com.au</span></div>
       </a>
       <a class="work-card open-build" href="#">
         <div class="work-shot soon"><span class="work-name">Yours next?</span></div>
