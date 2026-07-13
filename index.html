@@ -333,7 +333,7 @@ footer a{color:#9A8570}
           <li>The full five-page build, live in about a week</li>
           <li>Then $75/month (+GST), starting the day you go live</li>
           <li>Hosting, security, backups and a free update every quarter</li>
-          <li>Optional: logo design +$200 · full brand kit +$250</li>
+          <li>Optional: logo design +$200 · full brand kit +$50</li>
           <li>Cancel the monthly anytime, or buy the site out for $1,500</li>
         </ul>
         <a class="btn open-build" href="#">Create my site</a>
@@ -408,7 +408,7 @@ footer a{color:#9A8570}
       <div class="field" id="logoUploadWrap"><label class="lab">Upload your logo <span style="color:#9A8570;font-weight:700">(optional — you can email it later)</span></label><input type="file" name="logo_file" accept="image/*,.pdf,.ai,.svg"></div>
 
       <div class="optlabel">Extras</div>
-      <label class="opt"><input type="checkbox" name="brandKit" value="yes"><span>Full brand kit — colours, fonts &amp; style guide</span><span class="price">+$250</span></label>
+      <label class="opt"><input type="checkbox" name="brandKit" value="yes"><span>Full brand kit — colours, fonts &amp; style guide</span><span class="price">+$50</span></label>
 
       <div class="total-bar"><span class="lbl">To start today</span><span class="amt" id="totalAmt">$110</span></div>
       <div class="total-sub" id="totalSub">$100 build + GST · then $75/mo from go-live</div>
@@ -440,7 +440,7 @@ footer a{color:#9A8570}
   function updateTotal(){
     var sub=100;
     if(selectedLogo()==='design')sub+=200;
-    if(form.brandKit.checked)sub+=250;
+    if(form.brandKit.checked)sub+=50;
     var inc=Math.round(sub*1.1);
     totalAmt.textContent='$'+inc;
     totalSub.textContent='$'+sub+' + GST · then $75/mo from go-live';

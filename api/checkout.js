@@ -8,7 +8,7 @@ const Stripe = require('stripe');
 // prices in cents (AUD), ex-GST
 const BUILD = 10000;   // $100 build (buy-in)
 const LOGO = 20000;    // +$200 logo design
-const KIT = 25000;     // +$250 brand kit
+const KIT = 5000;      // +$50 brand kit
 const GST_RATE = 0.10;
 
 module.exports = async (req, res) => {
@@ -59,7 +59,7 @@ module.exports = async (req, res) => {
         about: (b.about || '').slice(0, 480),
         audience: (b.audience || '').slice(0, 240),
         logo: designLogo ? 'design (+$200)' : 'client-supplied',
-        brand_kit: brandKit ? 'yes (+$250)' : 'no',
+        brand_kit: brandKit ? 'yes (+$50)' : 'no',
         ongoing: '$75/mo (+GST) from go-live',
       },
       success_url: origin + '/?paid=true',
