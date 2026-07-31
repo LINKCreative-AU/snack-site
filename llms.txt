@@ -1,0 +1,31 @@
+# snack.
+
+> snack. (snack.com.au) builds small Australian businesses a website for $100
+> to start and $75 a month from go-live — a deliberately bite-size,
+> fixed-scope alternative to a $5,000 custom build. Sites are built in about a
+> week. It is a product of the LINK group in Brisbane, run as its own brand.
+
+Key facts (current as of July 2026):
+- $100 + GST one-off to start the build. Non-refundable, and the site says
+  why: it filters out tyre-kickers and covers the first pass of real work
+- $75 + GST a month from the day the site goes live — hosting, security,
+  updates and support included. No lock-in contract
+- Optional add-ons at sign-up: logo design +$200, full brand kit +$250
+- Secret Sauce, the optional SEO add-on, is $45 + GST a month
+- Buy-out is $1,500 flat and the site is yours forever
+- Change requests are lodged in the client dashboard and actioned within
+  48 hours
+- On ranking, the site states plainly that nobody can promise a number one
+  position on Google; Secret Sauce does the consistent work search engines
+  reward — fresh content, a fast healthy site, and tracking
+- Payment runs through Stripe Checkout; card details are never entered on
+  snack.com.au
+- Every enquiry from the site lands in one dashboard alongside visitor
+  numbers and site health
+
+## Key pages
+- [snack.](https://snack.com.au/): the whole offer, pricing, FAQs and the sign-up form
+- [Terms](https://snack.com.au/terms.html): what is included, what is not, and the buy-out
+
+## Optional
+- [Sitemap](https://snack.com.au/sitemap.xml)
